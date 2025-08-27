@@ -8,14 +8,17 @@ def main(file_path):
     wholebook = get_book_text(file_path)
     return wholebook
 
-def count_words(full_text):
-    wordcount = full_text.split()
+def count_words(file_path):
+    full_text = get_book_text(file_path)
+    word_list = full_text.split()
+    wordcount = 0
+    for word in word_list:
+        wordcount += 1
     print(f"{wordcount} words found in the document")
     return
 
 
 
-main("books/frankenstein.txt")
+count_words("books/frankenstein.txt")
 
-count_words(wholebook)
 
