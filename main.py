@@ -1,8 +1,6 @@
-from stats import count_words
-from stats import character_count
+from stats import word_char_analysis
 
-count_words("books/frankenstein.txt")
 
-character_count("books/frankenstein.txt")
+word_char_analysis("books/frankenstein.txt")
 
 
